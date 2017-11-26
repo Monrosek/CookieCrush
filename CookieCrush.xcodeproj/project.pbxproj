@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		043E41941FCA40D5002A401A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 043E41931FCA40D5002A401A /* AppDelegate.m */; };
+		043E41971FCA40D5002A401A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043E41961FCA40D5002A401A /* ViewController.m */; };
+		043E419A1FCA40D5002A401A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043E41981FCA40D5002A401A /* Main.storyboard */; };
+		043E419D1FCA40D5002A401A /* CookieCrush.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 043E419B1FCA40D5002A401A /* CookieCrush.xcdatamodeld */; };
+		043E419F1FCA40D5002A401A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043E419E1FCA40D5002A401A /* Assets.xcassets */; };
+		043E41A21FCA40D5002A401A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043E41A01FCA40D5002A401A /* LaunchScreen.storyboard */; };
+		043E41A51FCA40D5002A401A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 043E41A41FCA40D5002A401A /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		043E418F1FCA40D5002A401A /* CookieCrush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookieCrush.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		043E41921FCA40D5002A401A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		043E41931FCA40D5002A401A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		043E41951FCA40D5002A401A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		043E41961FCA40D5002A401A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		043E41991FCA40D5002A401A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		043E419C1FCA40D5002A401A /* CookieCrush.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CookieCrush.xcdatamodel; sourceTree = "<group>"; };
+		043E419E1FCA40D5002A401A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		043E41A11FCA40D5002A401A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		043E41A31FCA40D5002A401A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		043E41A41FCA40D5002A401A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		043E418C1FCA40D5002A401A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		043E41861FCA40D5002A401A = {
+			isa = PBXGroup;
+			children = (
+				043E41911FCA40D5002A401A /* CookieCrush */,
+				043E41901FCA40D5002A401A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		043E41901FCA40D5002A401A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				043E418F1FCA40D5002A401A /* CookieCrush.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		043E41911FCA40D5002A401A /* CookieCrush */ = {
+			isa = PBXGroup;
+			children = (
+				043E41921FCA40D5002A401A /* AppDelegate.h */,
+				043E41931FCA40D5002A401A /* AppDelegate.m */,
+				043E41951FCA40D5002A401A /* ViewController.h */,
+				043E41961FCA40D5002A401A /* ViewController.m */,
+				043E41981FCA40D5002A401A /* Main.storyboard */,
+				043E419E1FCA40D5002A401A /* Assets.xcassets */,
+				043E41A01FCA40D5002A401A /* LaunchScreen.storyboard */,
+				043E41A31FCA40D5002A401A /* Info.plist */,
+				043E41A41FCA40D5002A401A /* main.m */,
+				043E419B1FCA40D5002A401A /* CookieCrush.xcdatamodeld */,
+			);
+			path = CookieCrush;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		043E418E1FCA40D5002A401A /* CookieCrush */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 043E41A81FCA40D5002A401A /* Build configuration list for PBXNativeTarget "CookieCrush" */;
+			buildPhases = (
+				043E418B1FCA40D5002A401A /* Sources */,
+				043E418C1FCA40D5002A401A /* Frameworks */,
+				043E418D1FCA40D5002A401A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CookieCrush;
+			productName = CookieCrush;
+			productReference = 043E418F1FCA40D5002A401A /* CookieCrush.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		043E41871FCA40D5002A401A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Mobile Apps Company";
+				TargetAttributes = {
+					043E418E1FCA40D5002A401A = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 043E418A1FCA40D5002A401A /* Build configuration list for PBXProject "CookieCrush" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 043E41861FCA40D5002A401A;
+			productRefGroup = 043E41901FCA40D5002A401A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				043E418E1FCA40D5002A401A /* CookieCrush */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		043E418D1FCA40D5002A401A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043E41A21FCA40D5002A401A /* LaunchScreen.storyboard in Resources */,
+				043E419F1FCA40D5002A401A /* Assets.xcassets in Resources */,
+				043E419A1FCA40D5002A401A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		043E418B1FCA40D5002A401A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043E41971FCA40D5002A401A /* ViewController.m in Sources */,
+				043E419D1FCA40D5002A401A /* CookieCrush.xcdatamodeld in Sources */,
+				043E41A51FCA40D5002A401A /* main.m in Sources */,
+				043E41941FCA40D5002A401A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		043E41981FCA40D5002A401A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				043E41991FCA40D5002A401A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		043E41A01FCA40D5002A401A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				043E41A11FCA40D5002A401A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		043E41A61FCA40D5002A401A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		043E41A71FCA40D5002A401A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		043E41A91FCA40D5002A401A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CookieCrush/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = COM.MAC.CookieCrush;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		043E41AA1FCA40D5002A401A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CookieCrush/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = COM.MAC.CookieCrush;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		043E418A1FCA40D5002A401A /* Build configuration list for PBXProject "CookieCrush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043E41A61FCA40D5002A401A /* Debug */,
+				043E41A71FCA40D5002A401A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		043E41A81FCA40D5002A401A /* Build configuration list for PBXNativeTarget "CookieCrush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043E41A91FCA40D5002A401A /* Debug */,
+				043E41AA1FCA40D5002A401A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		043E419B1FCA40D5002A401A /* CookieCrush.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				043E419C1FCA40D5002A401A /* CookieCrush.xcdatamodel */,
+			);
+			currentVersion = 043E419C1FCA40D5002A401A /* CookieCrush.xcdatamodel */;
+			path = CookieCrush.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 043E41871FCA40D5002A401A /* Project object */;
+}

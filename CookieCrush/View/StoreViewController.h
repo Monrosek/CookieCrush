@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  StoreViewController.h
 //  CookieCrush
 //
 //  Created by Mac on 11/25/17.
@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "StoreManager.h"
 #import "APIService.h"
-@interface ViewController : UIViewController<APIDelegate>
-@property (weak, nonatomic) IBOutlet UILabel *label;
-@property (weak, nonatomic) IBOutlet UILabel *successLabel;
+#import "StoreManager.h"
+
+@interface StoreViewController : UIViewController<UICollectionViewDelegate,APIDelegate>
+
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (strong, nonatomic) StoreManager* store;
 @property (strong,nonatomic) APIService* api;
 
 @end
-

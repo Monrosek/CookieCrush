@@ -8,26 +8,48 @@
 
 /* Begin PBXBuildFile section */
 		043E41941FCA40D5002A401A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 043E41931FCA40D5002A401A /* AppDelegate.m */; };
-		043E41971FCA40D5002A401A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043E41961FCA40D5002A401A /* ViewController.m */; };
 		043E419A1FCA40D5002A401A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043E41981FCA40D5002A401A /* Main.storyboard */; };
 		043E419D1FCA40D5002A401A /* CookieCrush.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 043E419B1FCA40D5002A401A /* CookieCrush.xcdatamodeld */; };
 		043E419F1FCA40D5002A401A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043E419E1FCA40D5002A401A /* Assets.xcassets */; };
 		043E41A21FCA40D5002A401A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043E41A01FCA40D5002A401A /* LaunchScreen.storyboard */; };
 		043E41A51FCA40D5002A401A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 043E41A41FCA40D5002A401A /* main.m */; };
+		043E41B71FCA4264002A401A /* Cookie.m in Sources */ = {isa = PBXBuildFile; fileRef = 043E41B61FCA4264002A401A /* Cookie.m */; };
+		043E41BD1FCA4BD1002A401A /* StoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 043E41BC1FCA4BD1002A401A /* StoreManager.m */; };
+		043E41C11FCA50BB002A401A /* StoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043E41C01FCA50BB002A401A /* StoreViewController.m */; };
+		043E41C41FCA692E002A401A /* APIService.m in Sources */ = {isa = PBXBuildFile; fileRef = 043E41C31FCA692E002A401A /* APIService.m */; };
+		043E41CC1FCB3930002A401A /* CookieCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 043E41CA1FCB3930002A401A /* CookieCollectionViewCell.m */; };
+		043E41CD1FCB3930002A401A /* CookieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043E41CB1FCB3930002A401A /* CookieCollectionViewCell.xib */; };
+		0467575D1FCCE1170081C2B4 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0467575C1FCCE1170081C2B4 /* CoreDataManager.m */; };
+		049377E11FCB7A4B00E486BA /* cookies&milk-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049377E01FCB7A4A00E486BA /* cookies&milk-regular.ttf */; };
+		049377E41FCB7ECB00E486BA /* GlobalCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 049377E31FCB7ECB00E486BA /* GlobalCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		043E418F1FCA40D5002A401A /* CookieCrush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookieCrush.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		043E41921FCA40D5002A401A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		043E41931FCA40D5002A401A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		043E41951FCA40D5002A401A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		043E41961FCA40D5002A401A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		043E41991FCA40D5002A401A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		043E419C1FCA40D5002A401A /* CookieCrush.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CookieCrush.xcdatamodel; sourceTree = "<group>"; };
 		043E419E1FCA40D5002A401A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		043E41A11FCA40D5002A401A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		043E41A31FCA40D5002A401A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		043E41A41FCA40D5002A401A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		043E41B51FCA4264002A401A /* Cookie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cookie.h; sourceTree = "<group>"; };
+		043E41B61FCA4264002A401A /* Cookie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cookie.m; sourceTree = "<group>"; };
+		043E41BB1FCA4BD1002A401A /* StoreManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreManager.h; sourceTree = "<group>"; };
+		043E41BC1FCA4BD1002A401A /* StoreManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreManager.m; sourceTree = "<group>"; };
+		043E41BF1FCA50BB002A401A /* StoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreViewController.h; sourceTree = "<group>"; };
+		043E41C01FCA50BB002A401A /* StoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreViewController.m; sourceTree = "<group>"; };
+		043E41C21FCA692E002A401A /* APIService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIService.h; sourceTree = "<group>"; };
+		043E41C31FCA692E002A401A /* APIService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIService.m; sourceTree = "<group>"; };
+		043E41C91FCB3930002A401A /* CookieCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CookieCollectionViewCell.h; sourceTree = "<group>"; };
+		043E41CA1FCB3930002A401A /* CookieCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CookieCollectionViewCell.m; sourceTree = "<group>"; };
+		043E41CB1FCB3930002A401A /* CookieCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CookieCollectionViewCell.xib; sourceTree = "<group>"; };
+		0467575B1FCCE1170081C2B4 /* CoreDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		0467575C1FCCE1170081C2B4 /* CoreDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		049377E01FCB7A4A00E486BA /* cookies&milk-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "cookies&milk-regular.ttf"; sourceTree = "<group>"; };
+		049377E21FCB7ECB00E486BA /* GlobalCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalCache.h; sourceTree = "<group>"; };
+		049377E31FCB7ECB00E486BA /* GlobalCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlobalCache.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,18 +82,96 @@
 		043E41911FCA40D5002A401A /* CookieCrush */ = {
 			isa = PBXGroup;
 			children = (
-				043E41921FCA40D5002A401A /* AppDelegate.h */,
-				043E41931FCA40D5002A401A /* AppDelegate.m */,
-				043E41951FCA40D5002A401A /* ViewController.h */,
-				043E41961FCA40D5002A401A /* ViewController.m */,
+				043E41AB1FCA40E0002A401A /* Model */,
+				043E41BE1FCA5087002A401A /* View */,
+				043E41C51FCB2D2B002A401A /* ViewModel */,
+				043E41AF1FCA4140002A401A /* Services */,
+				043E41CE1FCB3CE5002A401A /* Resources */,
+				043E41CF1FCB3D34002A401A /* Application */,
+			);
+			path = CookieCrush;
+			sourceTree = "<group>";
+		};
+		043E41AB1FCA40E0002A401A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				043E41B51FCA4264002A401A /* Cookie.h */,
+				043E41B61FCA4264002A401A /* Cookie.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		043E41AF1FCA4140002A401A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				043E41C21FCA692E002A401A /* APIService.h */,
+				043E41C31FCA692E002A401A /* APIService.m */,
+				049377E21FCB7ECB00E486BA /* GlobalCache.h */,
+				049377E31FCB7ECB00E486BA /* GlobalCache.m */,
+				0467575B1FCCE1170081C2B4 /* CoreDataManager.h */,
+				0467575C1FCCE1170081C2B4 /* CoreDataManager.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		043E41BE1FCA5087002A401A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				043E41BF1FCA50BB002A401A /* StoreViewController.h */,
+				043E41C01FCA50BB002A401A /* StoreViewController.m */,
 				043E41981FCA40D5002A401A /* Main.storyboard */,
+				0460A24F1FCB53F300048F52 /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		043E41C51FCB2D2B002A401A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				043E41BB1FCA4BD1002A401A /* StoreManager.h */,
+				043E41BC1FCA4BD1002A401A /* StoreManager.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		043E41CE1FCB3CE5002A401A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0467575E1FCCECBC0081C2B4 /* Fonts */,
 				043E419E1FCA40D5002A401A /* Assets.xcassets */,
 				043E41A01FCA40D5002A401A /* LaunchScreen.storyboard */,
 				043E41A31FCA40D5002A401A /* Info.plist */,
-				043E41A41FCA40D5002A401A /* main.m */,
 				043E419B1FCA40D5002A401A /* CookieCrush.xcdatamodeld */,
 			);
-			path = CookieCrush;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		043E41CF1FCB3D34002A401A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				043E41921FCA40D5002A401A /* AppDelegate.h */,
+				043E41931FCA40D5002A401A /* AppDelegate.m */,
+				043E41A41FCA40D5002A401A /* main.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		0460A24F1FCB53F300048F52 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				043E41C91FCB3930002A401A /* CookieCollectionViewCell.h */,
+				043E41CA1FCB3930002A401A /* CookieCollectionViewCell.m */,
+				043E41CB1FCB3930002A401A /* CookieCollectionViewCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		0467575E1FCCECBC0081C2B4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				049377E01FCB7A4A00E486BA /* cookies&milk-regular.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +205,7 @@
 				TargetAttributes = {
 					043E418E1FCA40D5002A401A = {
 						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -134,7 +235,9 @@
 			files = (
 				043E41A21FCA40D5002A401A /* LaunchScreen.storyboard in Resources */,
 				043E419F1FCA40D5002A401A /* Assets.xcassets in Resources */,
+				043E41CD1FCB3930002A401A /* CookieCollectionViewCell.xib in Resources */,
 				043E419A1FCA40D5002A401A /* Main.storyboard in Resources */,
+				049377E11FCB7A4B00E486BA /* cookies&milk-regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,10 +248,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				043E41971FCA40D5002A401A /* ViewController.m in Sources */,
+				049377E41FCB7ECB00E486BA /* GlobalCache.m in Sources */,
+				043E41BD1FCA4BD1002A401A /* StoreManager.m in Sources */,
+				0467575D1FCCE1170081C2B4 /* CoreDataManager.m in Sources */,
+				043E41CC1FCB3930002A401A /* CookieCollectionViewCell.m in Sources */,
+				043E41C41FCA692E002A401A /* APIService.m in Sources */,
 				043E419D1FCA40D5002A401A /* CookieCrush.xcdatamodeld in Sources */,
 				043E41A51FCA40D5002A401A /* main.m in Sources */,
+				043E41C11FCA50BB002A401A /* StoreViewController.m in Sources */,
 				043E41941FCA40D5002A401A /* AppDelegate.m in Sources */,
+				043E41B71FCA4264002A401A /* Cookie.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +391,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CookieCrush/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = COM.MAC.CookieCrush;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CookieCrush/Model/CookieCrush-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -295,11 +408,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CookieCrush/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = COM.MAC.CookieCrush;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CookieCrush/Model/CookieCrush-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

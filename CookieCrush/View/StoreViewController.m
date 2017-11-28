@@ -7,6 +7,9 @@
 //
 
 #import "StoreViewController.h"
+#import "CookieCollectionViewCell.h"
+#define ROUND_BUTTON_WIDTH_HEIGHT 51
+
 @interface StoreViewController ()
 
 @end
@@ -17,21 +20,20 @@
     [super viewDidLoad];
     _api = [[APIService alloc] initWithDelegate:self];
     [self.api downloadStoreData];
+    
+    //Configure Sort button
+    [[self.sortDownButton imageView] setContentMode: UIViewContentModeScaleAspectFit];
+    [self.sortDownButton setImage:[UIImage imageNamed:@"sortIcon"] forState:UIControlStateNormal];
+    
+    UITapGestureRecognizer *doubleTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didDoubleTapCollectionView:)];
+    doubleTapGesture.numberOfTapsRequired = 2;
+    [self.collectionView addGestureRecognizer:doubleTapGesture];
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 
 -(void)downloadComplete:(NSDictionary*)JsonData {
@@ -44,6 +46,28 @@
 }
 
 
+- (IBAction)AscendingSort:(id)sender {
+    [self.store SortCookieList];
+    [self.collectionView reloadData];
+}
+
+- (void)didDoubleTapCollectionView:(UITapGestureRecognizer *)gesture {
+    CGPoint pointInCollectionView = [gesture locationInView:self.collectionView];
+    NSIndexPath *selectedIndexPath = [self.collectionView indexPathForItemAtPoint:pointInCollectionView];
+      CookieCollectionViewCell *selectedCell = (CookieCollectionViewCell*)[self.collectionView cellForItemAtIndexPath:selectedIndexPath];
+    NSLog(@"%@",selectedIndexPath);
+    
+    if([self.store isFavorite:[selectedIndexPath row]]) {
+        
+        selectedCell.favIcon.image = [UIImage imageNamed: @"notfav"];
+    }
+    else {
+        
+        selectedCell.favIcon.image = [UIImage imageNamed: @"fav"];
+        
+    }
+
+}
 @end
 
 

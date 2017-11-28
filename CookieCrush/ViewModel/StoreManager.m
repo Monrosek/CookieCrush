@@ -21,7 +21,7 @@ static NSString * const reuseIdentifier = @"cookie";
         
         _success = [dict objectForKey:@"success"];
         NSArray *cookieBatch = [dict objectForKey:@"cookies"];
-        _cookies = [NSMutableArray new];
+        //_cookies = [NSMutableArray new];
         for (NSDictionary *dic in cookieBatch) {
             NSNumber* id = (NSNumber*)[dic objectForKey:@"id"];
             NSString *name = (NSString*)[dic objectForKey:@"name"];
@@ -30,9 +30,12 @@ static NSString * const reuseIdentifier = @"cookie";
             NSString *addedOn = (NSString*)[dic objectForKey:@"addedOn"];
             
             if([CoreDataManager SearchFor:name] == NO) {
-                [CoreDataManager SaveCookieToCoreData:id name:name price:price imageURL:imageURL addedOn:addedOn];
+                [CoreDataManager SaveCookieToCoreData:id name:name price:price imageURL:imageURL addedOn:addedOn favorite:0];
             }
         }
+        
+        self.cookies = [CoreDataManager FetchCookiesFromCoreData];
+        
     }
     return self;
 }
@@ -51,18 +54,36 @@ static NSString * const reuseIdentifier = @"cookie";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     CookieCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
-    cell.nameLabel.text = [[_cookies objectAtIndex:[indexPath row]] name];
-    cell.priceLabel.text = [[[_cookies objectAtIndex:[indexPath row]] price] stringValue];
-    NSString *imgUrl = [[_cookies objectAtIndex:[indexPath row]] imageURL];
-    [APIService downloadImage:imgUrl
-     completionHandler:^(UIImage *image, NSError *error) {
-     dispatch_async(dispatch_get_main_queue(), ^{
-        if( image != NULL) {cell.cookieView.image = image;}
-                else { NSLog(@"%@",error);}});}];
+    NSManagedObject *cookie = [self.cookies objectAtIndex:[indexPath row]];
+    cell.nameLabel.text = [cookie valueForKey:@"name"];
+    cell.priceLabel.text = [[cookie valueForKey:@"price"] stringValue];
+    NSString *imgURL = [cookie valueForKey:@"imageurl"];
+    [APIService downloadImage:imgURL
+            completionHandler:^(UIImage *image, NSError *error) {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    if( image != NULL) {cell.cookieView.image = image;}
+                    else { NSLog(@"%@",error);}});}];
     return cell;
 }
 
+-(void)SortCookieList {
+    NSArray *sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES]];
+    _cookies = (NSMutableArray*)[_cookies sortedArrayUsingDescriptors:sortDescriptors];
+   // NSLog(@"%@", self.cookies);
+}
 
+-(BOOL)isFavorite:(NSInteger)index {
+    NSManagedObject *cookie = [self.cookies objectAtIndex:index];
+    if([cookie valueForKey:@"favorite"] > 0) {
+        return YES;
+    }
+    return NO;
+}
+
+-(void)addToFavorites:(NSInteger)index {
+  //  NSManagedObject *cookie = [self.cookies objectAtIndex:index];
+    
+}
 
 @end
 

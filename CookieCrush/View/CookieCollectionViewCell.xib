@@ -48,13 +48,19 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="notFav" translatesAutoresizingMaskIntoConstraints="NO" id="gYx-DJ-SGm">
+                        <rect key="frame" x="295" y="123" width="63" height="51"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
                 </subviews>
             </view>
             <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
             <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
             <size key="customSize" width="400" height="246"/>
             <connections>
                 <outlet property="cookieView" destination="Kjm-cT-DGY" id="g3B-Cs-8Uq"/>
+                <outlet property="favIcon" destination="gYx-DJ-SGm" id="eBM-Jc-3Lp"/>
                 <outlet property="nameLabel" destination="VTO-O8-wiY" id="CF9-3y-aSd"/>
                 <outlet property="priceLabel" destination="kzS-Xa-0gf" id="Wmu-mA-W1T"/>
             </connections>
@@ -63,5 +69,6 @@
     </objects>
     <resources>
         <image name="cookie" width="314" height="295"/>
+        <image name="notFav" width="256" height="256"/>
     </resources>
 </document>

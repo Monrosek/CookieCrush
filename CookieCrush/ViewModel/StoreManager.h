@@ -15,5 +15,7 @@
 
 @property (strong, nonatomic) NSMutableArray* cookies;
 @property (strong, nonatomic) NSNumber* success;
-
+-(void)SortCookieList;
+-(BOOL)isFavorite:(NSInteger)index;
+-(void)addToFavorites:(NSInteger)index;
 @end

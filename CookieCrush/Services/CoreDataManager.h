@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#define ENTITY "CookieEntity"
+
 @interface CoreDataManager : NSObject
 
 +(NSManagedObjectContext*)ManagedContext;
@@ -16,7 +18,11 @@
         name: (NSString*)name
         price:(NSNumber*)price
         imageURL: (NSString*) imageURL
-        addedOn: (NSString*) addedOn;
+        addedOn: (NSString*) addedOn
+        favorite:(NSNumber*) favorite;
 
 +(BOOL)SearchFor:(NSString*)name;
++(NSMutableArray*)FetchCookiesFromCoreData;
++(NSManagedObject*)getCookieWithName:(NSString*)name;
++(void)AddCookieToFavorites:(NSString*)name;
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "CookieCollectionViewCell.h"
-
+#import <UIKit/UIKit.h>
 @implementation CookieCollectionViewCell
 
 - (void)awakeFromNib {
@@ -16,6 +16,7 @@
     self.cookieView.layer.zPosition = 5;
     self.cookieView.layer.cornerRadius = self.cookieView.frame.size.height /2;
     self.cookieView.layer.masksToBounds = YES;
+    self.favIcon.image = [UIImage imageNamed: @"notFav"];
 }
 
 @end

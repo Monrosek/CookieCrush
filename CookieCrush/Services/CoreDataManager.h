@@ -24,5 +24,8 @@
 +(BOOL)SearchFor:(NSString*)name;
 +(NSMutableArray*)FetchCookiesFromCoreData;
 +(NSManagedObject*)getCookieWithName:(NSString*)name;
-+(void)AddCookieToFavorites:(NSString*)name;
++(void)RemoveCookieFromCoreData:(NSManagedObject*)cookie;
++(void)UpdateCookieAttribute:(NSString*)name fav:(NSNumber*)value;
++(void)RemoveAllObectsFromCoreData;
+//+(NSMutableArray)
 @end

@@ -14,8 +14,12 @@
 -(id) initWithDict: (NSDictionary*) dict;
 
 @property (strong, nonatomic) NSMutableArray* cookies;
+@property (strong, nonatomic) NSMutableArray* filteredCookies;
 @property (strong, nonatomic) NSNumber* success;
+@property (assign, nonatomic) BOOL isFiltered;
 -(void)SortCookieList;
 -(BOOL)isFavorite:(NSInteger)index;
--(void)addToFavorites:(NSInteger)index;
+-(void)toggleFavorite:(NSInteger)index;
+-(void)FilterCookiesResults:(NSString*)searchText;
+-(void)endFilter;
 @end

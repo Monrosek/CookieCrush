@@ -10,11 +10,14 @@
 #import "APIService.h"
 #import "StoreManager.h"
 
-@interface StoreViewController : UIViewController<UICollectionViewDelegate,APIDelegate>
+@interface StoreViewController : UIViewController<UICollectionViewDelegate,APIDelegate,UISearchBarDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *sortDownButton;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (strong, nonatomic) StoreManager* store;
 @property (strong,nonatomic) APIService* api;
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 - (IBAction)AscendingSort:(id)sender;
 - (void)didDoubleTapCollectionView:(UITapGestureRecognizer *)gesture;
+- (void)singleTapCollectionView:(UITapGestureRecognizer *)gesture;
+
 @end

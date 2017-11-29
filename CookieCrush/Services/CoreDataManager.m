@@ -45,7 +45,6 @@ favorite:(NSNumber*) favorite {
     NSMutableArray* cookies = [[context executeFetchRequest:fetchRequest error:nil] mutableCopy];
     if ([cookies count] > 0)
         return YES;
-    
     return NO;
 }
 
@@ -54,6 +53,7 @@ favorite:(NSNumber*) favorite {
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@ENTITY];
     return [[context executeFetchRequest:fetchRequest error:nil] mutableCopy];
 }
+
 +(NSManagedObject*)getCookieWithName:(NSString*)name {
     NSManagedObjectContext *context = [self ManagedContext];
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@ENTITY];
@@ -65,12 +65,45 @@ favorite:(NSNumber*) favorite {
     return nil;
 }
 
-+(void)AddCookieToFavorites:(NSString*)name {
++(void)RemoveCookieFromCoreData:(NSManagedObject*)cookie {
+    NSManagedObjectContext *context = [self ManagedContext];
+    [context deleteObject:cookie];
+}
+
++(void)UpdateCookieAttribute:(NSString*)name fav:(NSNumber*)value{
+    NSManagedObjectContext *context = [self ManagedContext];
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@ENTITY];
+    [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"name == %@", name]];
+    NSMutableArray* cookies = [[context executeFetchRequest:fetchRequest error:nil] mutableCopy];
+    if(cookies.count > 0) {
+        [[cookies objectAtIndex:0] setValue:value forKey:@"favorite"];
+        __block NSError *error = nil;
+        if(![context save:&error]) {
+            NSLog(@"Cookie didn't update in Core Data! %@ %@", error, [error localizedDescription]);
+        }
+    }
+    else {
+        NSLog(@"%@ wasn't found in batch", name);
+    }
+}
+
++(void)RemoveAllObectsFromCoreData {
+    /*
+     NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"Car"];
+     NSBatchDeleteRequest *delete = [[NSBatchDeleteRequest alloc] initWithFetchRequest:request];
+     
+     NSError *deleteError = nil;
+     [myPersistentStoreCoordinator executeRequest:delete withContext:myContext error:&deleteError];
+     */
     
+    NSManagedObjectContext *context = [self ManagedContext];
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@ENTITY];
+    NSBatchDeleteRequest *deleteAll = [[NSBatchDeleteRequest alloc] initWithFetchRequest:fetchRequest];
+    __block NSError *deleteError = nil;
+    [context executeRequest:deleteAll error:&deleteError];
 }
 
 @end
-
 
 
 

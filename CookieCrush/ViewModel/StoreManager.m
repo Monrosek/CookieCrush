@@ -48,10 +48,10 @@ static NSString * const reuseIdentifier = @"cookie";
 -(void)SortCookieList {
     NSArray *sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES]];
     _cookies = (NSMutableArray*)[_cookies sortedArrayUsingDescriptors:sortDescriptors];
-//    if(_isFiltered == YES) {
-//        _filteredCookies = (NSMutableArray*)[_filteredCookies sortedArrayUsingDescriptors:sortDescriptors];
-//    }
-    // NSLog(@"%@", self.cookies);
+    if(_isFiltered == YES) {
+        _filteredCookies = (NSMutableArray*)[_filteredCookies sortedArrayUsingDescriptors:sortDescriptors];
+    }
+     NSLog(@"%@", self.cookies);
 }
 
 -(BOOL)isFavorite:(NSInteger)index {
@@ -117,7 +117,6 @@ static NSString * const reuseIdentifier = @"cookie";
 
 -(void)endFilter {
     _isFiltered = false;
-    [_filteredCookies removeAllObjects];
 }
 
 #pragma mark <UICollectionViewDataSource>
